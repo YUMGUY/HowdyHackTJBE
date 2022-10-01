@@ -1,0 +1,261 @@
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+.frame {
+width: 90%;
+margin: 40px auto;
+text-align: center;
+padding-top: 30%;
+}
+
+
+
+button {
+margin: 20px;
+}
+.custom-btn {
+width: 130px;
+height: 40px;
+color: #fff;
+border-radius: 5px;
+padding: 10px 25px;
+font-family: 'Lato', sans-serif;
+font-weight: 500;
+background: transparent;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+outline: none;
+}
+
+/* 3 */
+.btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 422.50px;
+    height: 130px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+
+.btn-3:before {
+height: 0%;
+width: 2px;
+}
+.btn-3:after {
+width: 0%;
+height: 2px;
+}
+.btn-3:hover{
+    background: transparent;
+box-shadow: none;
+}
+.btn-3:hover:before {
+height: 100%;
+}
+.btn-3:hover:after {
+width: 100%;
+}
+.btn-3 span:hover{
+    color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+position: absolute;
+content: "";
+left: 0;
+bottom: 0;
+    background: rgba(2,126,251,1);
+transition: all 0.3s ease;
+}
+.btn-3 span:before {
+width: 2px;
+height: 0%;
+}
+.btn-3 span:after {
+width: 0%;
+height: 2px;
+}
+.btn-3 span:hover:before {
+height: 100%;
+}
+.btn-3 span:hover:after {
+width: 100%;
+}
+
+
+/*button text stuff*/
+.buttonTXT {
+    text-align: center;
+    color: azure;
+}
+
+/* animation for airplane and clouds*/
+@-webkit-keyframes sky {
+    from {left: 110%}
+    to {left: -30%;}
+}
+
+@keyframes sky {
+    from {left: 110%}
+    to {left: -30%;}
+}
+
+@-webkit-keyframes airplane {
+    0% {top: 40%; left:20%;}
+    25% {top: 55%; left:40%;}
+    75% {top:30%; left:10%;}
+    100% {top:40%; left:20%;}	
+}
+
+
+@keyframes airplane {
+    0% {top: 40%; left:20%;}
+    25% {top: 55%; left:40%;}
+    75% {top:30%; left:10%;}
+    100% {top:40%; left:20%;}	
+}
+
+.cloud {
+	position: absolute;
+	background-color: #C5EFF7;
+	width:7em;
+	height:7em;
+	border-radius: 7em;
+	left: 80%;
+	top:5%;
+	animation: sky 5s infinite;
+	-webkit-animation: sky 5s infinite;
+}
+
+
+.cloud::before {
+	content:"";
+	display: block;
+	width:5em;
+	height:5em;
+	border-radius: 5em;
+	background-color: #C5EFF7;
+	margin-left: -2em;
+}
+
+.cloud::after {
+	content: "";
+	display: block;
+	width: 7em;
+	height: 7em;
+	border-radius: 7em;
+	background-color: #C5EFF7;
+	margin-left: 4em;
+	margin-top: -6em;
+}
+
+.cloud:nth-of-type(2) {
+	background-color: #E4F1FE;
+	left: 70%;
+	top: 30%;
+	transform: rotate(180deg) skew(-20deg);
+	animation: sky 7s infinite;
+	-webkit-animation: sky 7s infinite;
+}
+
+.cloud:nth-of-type(2)::before, .cloud:nth-of-type(2)::after {
+	background-color: #E4F1FE;
+}
+
+.cloud:nth-of-type(3) {
+	top: 70%;
+	left: 80%;
+	animation: sky 9s infinite;
+	-webkit-animation: sky 9s infinite;
+}
+
+.cloud:nth-of-type(3)::before, .cloud:nth-of-type(3)::after {
+	transform: rotate(60deg) skewY(-23deg);
+	width: 6em;
+	border-radius: 6em;
+	height: 6em;
+	margin-left: -4em;
+}
+
+.cloud:nth-of-type(3)::after {
+	margin-left: -1em;
+	margin-top: -9em;
+}
+
+.airplane {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-left: 150px solid #34495E;
+	border-bottom: 100px solid transparent;
+	z-index: 100;
+	transform: rotate(-20deg) skew(10deg);
+	top:40%;
+	left:20%;
+	animation: airplane 15s infinite;
+	-webkit-animation: airplane 15s infinite;
+}
+
+.airplane::before {
+	border-bottom: 27px solid #4B77BC;
+	border-left: 45px solid transparent;
+	border-right: 2px solid transparent;
+	border-radius: -11px;
+	height: 0;
+	width: 100px;
+	content: "";
+	position: absolute;
+	z-index: 6;
+	height: 0em;
+	margin-left: -10em;
+	margin-top: -5px;
+	transform: rotate(182deg) skewX(-35deg);
+}
+
+.airplane::after {
+	border-bottom: 26px solid #34495E;
+	border-left: 33px solid transparent;
+	border-right: 2px solid transparent;
+	height: 0;
+	width: 98px;
+	content: "";
+	position: absolute;
+	z-index: 6;
+	height: 0em;
+	margin-left: -9.9em;
+	margin-top: -2px;
+	transform: rotate(182deg) skewX(-47deg);
+}
+
+body {
+    background-color: #52B3D9;
+    overflow-y:auto;
+}
