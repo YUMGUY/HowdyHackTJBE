@@ -10,9 +10,24 @@ h1 {
 width: 90%;
 margin: 40px auto;
 text-align: center;
-padding-top: 30%;
+padding-top: 10%;
 }
 
+
+/*
+div classes for the image and quote
+“The world is a book and those who do not travel read only one page.” ~ Saint Augustine
+
+*/
+.ImageBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:500px;
+    width:500px;
+    border:2px solid green;
+}
 
 
 button {
@@ -39,8 +54,8 @@ outline: none;
 
 /* 3 */
 .btn-3 {
-    background: rgb(0,172,238);
-  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    background-color: #ECFBFF;
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgb(2, 251, 147) 100%);
     width: 422.50px;
     height: 130px;
     line-height: 42px;
@@ -60,7 +75,7 @@ outline: none;
     content: "";
     right: 0;
     top: 0;
-     background: rgba(2,126,251,1);
+     background: rgb(2, 251, 64);
     transition: all 0.3s ease;
   }
 
