@@ -1,53 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type = "text/css" href = "websiteStyle.css">
-    <script src = "websiteJs.js"></script>
-    <title>HowdyHack</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type = "text/css" href = "websiteStyle.css">
+        <script src = "websiteJs.js"></script>
+        <title>HowdyHack</title>
+    </head>
 
-    <!--quote centered-->
-    <h1 id = 'quote'>“The world is a book and those who do not travel read only one page.”</h1>
-    <div class = "centerText">
-        <p1 id = 'author'> ~ Saint Augustine</p1>
-    </div>
+    <body data-barba="wrapper">
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
 
-    
-    <!--constant paper airplane bg-->
-    <div class="cloud"></div>
+        <main data-barba="container" data-barba-namespace="home-section">
+            <div class="header">
+                <h1 id = 'quote'>“THE WORLD IS A BOOK AND THOSE WHO DO NOT TRAVEL READ ONLY ONE PAGE.”</h1>
+                <div class = "centerText">
+                    <h2 id = 'author'> ~ Saint Augustine</h2>
+                </div>
+                <div class="animate-this button">
+                    <a href="placeDetail.html" onclick = "changeImage()">turn the page</a>
+                </div>
+            </div>
 
-    <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="airplane"></div>
+        </main>
+    </body>
 
-    <div class="cloud"></div>
-
-    <div class="airplane"></div>
-
-
-    
-
-    <div class="frame">
-        <button id = "info" class="custom-btn btn-3" onclick = "changePage();">
-            <h1> 
-            <span>Flip the Page
-            </span></button>
-        </h1>
-    </div>
-
-
-   
-   
-
-    <!-- <button>
-        <p>Send</p>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-          <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
-      M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
-        </svg>
-      </button> -->
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="websiteJs.js"></script>
 </html>
+<script>
+    changeImage();
+</script>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type = "text/css" href = "websiteStyle.css">
+        <script src = "websiteJs.js"></script>
+        <title>HowdyHack</title>
+    </head>
+    <body data-barba="wrapper">
+        test
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+
+        <main data-barba="container" data-barba-namespace="home-section">
+            <div class="header">
+                <div class="animate-this button">
+                    <a href="placeDetail.html">turn the page</a>
+                </div>
+            </div>
+        </main>
+
+        constant paper airplane bg
+        <div class="cloud"></div>
+
+        <div class="cloud"></div>
+
+        <div class="cloud"></div>
+
+        <div class="airplane"></div>
+
+        quote centered
+        <h1 id = 'quote'>“THE WORLD IS A BOOK AND THOSE WHO DO NOT TRAVEL READ ONLY ONE PAGE.”</h1>
+        <div class = "centerText">
+            <h2 id = 'author'> ~ Saint Augustine</h2>
+        </div>
+
+        <div class="frame">
+            <button id = "info" class="custom-btn btn-3" onclick = "changePage();">
+                <h1> 
+                <span>Flip the Page
+                </span></button>
+            </h1>
+        </div>
+        
+
+    </body>
+    test
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+</html>
+-->

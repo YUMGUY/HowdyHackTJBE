@@ -1,50 +1,181 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #161616;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color:aliceblue;
+    
+    
+}
+
+.infoText {
+    padding-left: 5%;
+
+
+}
+
+#landmarkDesc,#descSource {
+    font-weight: lighter;
+
+}
+#pl {
+    border:1px white;
+    padding-left: 500px;
+}
+
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #4bedc2;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+h1 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Cosi Azure";
+    font-size: 84px;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.button:hover a {
+    background: white;
+    color: #161616;
+    transition: 0.3s;
+}
+
+.ImageBox {
+   padding-left: 5%;
+}
+
+
+
+/*
 h1 {
     position: relative;
     text-align: center;
     color: #353535;
     font-size: 50px;
-    font-family: "Cormorant Garamond", serif;
-  }
+    left: 50%;
+    transform: translate(-50%, 130%);
+	margin-right: 300px;
+    font-family: "Cosi Azure";
+    font-size: 50px;
+}
 
-#quote {
-	font-family: 'Pacifico';
-	font-size:100px;
+h2 {
 	position: relative;
     text-align: center;
-	
-}
-#author {
-	color: #353535;
-	font-size: 50px;
-	font-family: "Cormorant Garamond", serif;
-}
-.centerText {
-	position: relative;
-    text-align: center;
+    color: #4D4D4D;
+    font-size: 50px;
+    left: 50%;
+	transform: translate(-27%, 340%);
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
 }
 
+.frame {
+	width: 90%;
+	margin: 40px auto;
+	text-align: center;
+	padding-top: 10%;
+}
 
-/*all the code above is h1 id's, which affect heading text*/
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #4bedc2;
+    width: 0%;
+    height: 100%;
+}
 
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
 
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-/*
-div classes for the image and quote
-“The world is a book and those who do not travel read only one page.” ~ Saint Augustine
+.button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+    transition: 0.3s;
+}
 
-*/
+.button:hover a {
+    background: white;
+    color: #161616;
+    transition: 0.3s;
+}
+
 .ImageBox {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(0%, -50%); /* placed at the right*/
+    transform: translate(50%, -50%);
     height:500px;
     width:500px;
     border:2px solid green;
 }
 
-
-/* animation for airplane and clouds*/
 @-webkit-keyframes sky {
     from {left: 110%}
     to {left: -30%;}
@@ -56,17 +187,17 @@ div classes for the image and quote
 }
 
 @-webkit-keyframes airplane {
-    0% {top: 40%; left:20%;}
-    25% {top: 55%; left:40%;}
-    75% {top:30%; left:10%;}
+    0% {top: 40%; left:15%;}
+    25% {top: 55%; left:30%;}
+    75% {top:32%; left:10%;}
     100% {top:40%; left:20%;}	
 }
 
 
 @keyframes airplane {
-    0% {top: 40%; left:20%;}
-    25% {top: 55%; left:40%;}
-    75% {top:30%; left:10%;}
+    0% {top: 40%; left:15%;}
+    25% {top: 55%; left:30%;}
+    75% {top:32%; left:10%;}
     100% {top:40%; left:20%;}	
 }
 
@@ -184,16 +315,6 @@ div classes for the image and quote
 }
 
 body {
-    background-color: #b4dde7d7;
-    overflow-y:auto;
+    background-color: #52B3D9;
 }
-#detailBody {
-	background-color: #b4dde7d7;
-}
-
-
-
-
-
-
-
+*/
