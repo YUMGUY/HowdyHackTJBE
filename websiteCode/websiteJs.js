@@ -24,7 +24,6 @@ function changeImage() {
     document.getElementById("Img1").src = places[index];
 }
 
-
 function changePage() {
     location.href = 'placeDetail.html';
     
