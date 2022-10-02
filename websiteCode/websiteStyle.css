@@ -8,8 +8,6 @@ body {
 a {
     text-decoration: none;
     color:aliceblue;
-    
-    
 }
 #author {
     text-align:center;
@@ -25,9 +23,13 @@ a {
     padding-left: 5%;
 }
 
-#landmarkDesc,#descSource {
+#descSource {
     font-weight: lighter;
+    text-decoration: underline;
+}
 
+#landmarkDesc {
+    font-weight: lighter;
 }
 #pl {
     border:1px white;
@@ -63,6 +65,8 @@ h1 {
     transform: translate(-50%, -50%);
     font-family: "Cosi Azure";
     font-size: 84px;
+    /* color: transparent;
+    text-shadow: 0 0 8px white; */
 }
 
 .button {
@@ -88,6 +92,31 @@ h1 {
     background: white;
     color: #161616;
     transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.test {
+    background-color: #161616;
+    border: none;
+    size: 7000px;
+    width: 750px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    top: 46%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-family: "Cosi Azure";
+    font-size: 84px;
+    font-weight: bold;
+}
+
+.test:not(hover) {
+    filter: blur(5px);
+}
+
+.test:hover {
+    filter: blur(0px);
 }
 
 .ImageBox {
