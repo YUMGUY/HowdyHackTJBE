@@ -16,15 +16,13 @@ a {
     position:fixed;
     top:71%;
     left:49%;
-    transform:translate(5%, 10%);
-    font-size:40px;
-
+    transform:translate(0%, -10%);
+    font-size:50px;
+    color: #ABABAB;
 }
 
 .infoText {
     padding-left: 5%;
-
-
 }
 
 #landmarkDesc,#descSource {
@@ -93,7 +91,8 @@ h1 {
 }
 
 .ImageBox {
-   padding-left: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
 }
 
 
