@@ -44,4 +44,5 @@ function syncReadFile(filename) {
     return arr;
 }
 var places2 = syncReadFile("./textFile.txt");
+
 window.onload = changeImage();
