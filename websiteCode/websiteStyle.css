@@ -6,11 +6,27 @@ h1 {
     font-family: "Cormorant Garamond", serif;
   }
 
+#quote {
+	font-family: 'Pacifico';
+	font-size:100px;
+	position: relative;
+    text-align: center;
+	
+}
+#author {
+	color: #353535;
+	font-size: 50px;
+	font-family: "Cormorant Garamond", serif;
+}
+.centerText {
+	position: relative;
+    text-align: center;
+}
+
 .frame {
 width: 90%;
 margin: 40px auto;
 text-align: center;
-padding-top: 10%;
 }
 
 
@@ -23,7 +39,7 @@ div classes for the image and quote
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%); /* placed at the right*/
     height:500px;
     width:500px;
     border:2px solid green;
@@ -55,7 +71,7 @@ outline: none;
 /* 3 */
 .btn-3 {
     background-color: #ECFBFF;
-  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgb(2, 251, 147) 100%);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgb(64, 91, 224) 100%);
     width: 422.50px;
     height: 130px;
     line-height: 42px;
@@ -75,7 +91,7 @@ outline: none;
     content: "";
     right: 0;
     top: 0;
-     background: rgb(2, 251, 64);
+     background: rgb(64, 91, 224);
     transition: all 0.3s ease;
   }
 
@@ -271,8 +287,11 @@ width: 100%;
 }
 
 body {
-    background-color: #52B3D9;
+    background-color: #b4dde7d7;
     overflow-y:auto;
+}
+#detailBody {
+	background-color: #b4dde7d7;
 }
 
 
