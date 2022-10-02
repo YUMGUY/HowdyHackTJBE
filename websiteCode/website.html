@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type = "text/css" href = "websiteStyle.css">
+    <link rel="stylesheet" type = "text/css" href = "websiteStyle.styl.css">
     <script src = "websiteJs.js"></script>
     <title>HowdyHack</title>
 </head>
@@ -29,25 +29,31 @@
 
     
 
-    <div class="frame">
-        <button id = "info" class="custom-btn btn-3" onclick = "changePage();">
-            <h1> 
-            <span>Flip the Page
-            </span></button>
-        </h1>
-    </div>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<button id = "fly" class="button" onclick="buttonClick(); changePage()">
+  <p id = "pCenter">Flip the Page?</p>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+    <path 
+        id="paper-plane-icon" 
+        d=" M 462, 54.955
+            L 355.371, 437.187
+            l -135.92, -128.842
+            L 353.388, 167
+            l -179.53, 124.074
+            L 50, 260.973
+            L 462, 54.955
+            z
+            M 202.992, 332.528
+            v 124.517
+            l 58.738, -67.927
+            L 202.992, 332.528
+            z"></path> 
+  </svg>
+</button>
 
 
-   
-   
 
-    <!-- <button>
-        <p>Send</p>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-          <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
-      M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
-        </svg>
-      </button> -->
+
 
 </body>
 </html>

@@ -1,0 +1,295 @@
+@import "nib";
+
+* {
+	transition: all .15s;
+	outline: none;
+
+}
+
+button {
+	font-size: 48px;
+	font-family: 'Pacifico';
+	overflow: visible;
+	border-radius: 7px;
+	position: relative;
+	padding-top: 15px;
+	padding-right: 20px;
+	background-color: #ecfbff;
+	border: 2px solid #a6e0ee;
+	color: #2d7586;
+	display: block;
+	margin: 5% auto;
+	height: 150px;
+	width: 500px;
+	cursor: pointer;
+  }
+  button:hover {
+	background-color: #ddf7ff;
+  }
+  button:hover svg {
+	transform: rotate(10deg);
+	transition: transform 0.15s;
+  }
+  button svg {
+	position: absolute;
+	top: 13px;
+	right: 25px;
+	height: 30px;
+	width: auto;
+	transition: transform 0.15s;
+  }
+  button svg path {
+	fill: #2d7586;
+  }
+.clicked {
+	background-color: #cff5b3;
+	border: 2px solid #cff5b3;
+	color: #6aaa3b;
+	padding-right: 6px;
+	animation: bounce-in 0.3s;
+	cursor: default;
+  }
+.clicked svg {
+	animation: flyaway 1.3s linear;
+	top: -80px;
+	right: -1000px;
+  }
+.clicked svg path {
+	fill: #6aaa3b;
+  }
+  
+  @keyframes flyaway {
+	0%   { transform: rotate(10deg);
+		   top: 13px;
+		   right: 25px;
+		   height: 30px; }
+	5%   { transform: rotate(10deg);
+		   top: 13px;
+		   right: 0px;
+		   height: 30px; }
+	20%   { transform: rotate(-20deg);
+			top: 13px;
+			right: -130px;
+			height: 45px; }  
+	40%   { transform: rotate(10deg);
+			top: -40px;
+			right: -280px;
+			opacity: 1; }
+	100% { transform: rotate(60deg);
+		   top: -200px;
+		   right: -1000px;
+		   height: 0;
+		   opacity: 0; }
+  }
+  
+  @keyframes bounce-in {
+	0% { padding-right: 30px; }
+	40% { padding-right: 6px; }
+	50% { padding-left: 30px; }
+	100% { padding-left: 6px; }
+  }
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+#quote {
+	font-family: 'Pacifico';
+	font-size:100px;
+	position: relative;
+    text-align: center;
+	
+}
+#author {
+	color: #353535;
+	font-size: 50px;
+	font-family: "Cormorant Garamond", serif;
+}
+.centerText {
+	position: relative;
+    text-align: center;
+}
+
+
+/*all the code above is h1 id's, which affect heading text*/
+
+
+
+/*
+div classes for the image and quote
+“The world is a book and those who do not travel read only one page.” ~ Saint Augustine
+
+*/
+.ImageBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%); /* placed at the right*/
+    height:500px;
+    width:500px;
+    border:2px solid green;
+}
+
+
+/* animation for airplane and clouds*/
+@-webkit-keyframes sky {
+    from {left: 110%}
+    to {left: -30%;}
+}
+
+@keyframes sky {
+    from {left: 110%}
+    to {left: -30%;}
+}
+
+@-webkit-keyframes airplane {
+    0% {top: 40%; left:20%;}
+    25% {top: 55%; left:40%;}
+    75% {top:30%; left:10%;}
+    100% {top:40%; left:20%;}	
+}
+
+
+@keyframes airplane {
+    0% {top: 40%; left:20%;}
+    25% {top: 55%; left:40%;}
+    75% {top:30%; left:10%;}
+    100% {top:40%; left:20%;}	
+}
+
+.cloud {
+	position: absolute;
+	background-color: #C5EFF7;
+	width:7em;
+	height:7em;
+	border-radius: 7em;
+	left: 80%;
+	top:5%;
+	animation: sky 5s infinite;
+	-webkit-animation: sky 5s infinite;
+}
+
+
+.cloud::before {
+	content:"";
+	display: block;
+	width:5em;
+	height:5em;
+	border-radius: 5em;
+	background-color: #C5EFF7;
+	margin-left: -2em;
+}
+
+.cloud::after {
+	content: "";
+	display: block;
+	width: 7em;
+	height: 7em;
+	border-radius: 7em;
+	background-color: #C5EFF7;
+	margin-left: 4em;
+	margin-top: -6em;
+}
+
+.cloud:nth-of-type(2) {
+	background-color: #E4F1FE;
+	left: 70%;
+	top: 30%;
+	transform: rotate(180deg) skew(-20deg);
+	animation: sky 7s infinite;
+	-webkit-animation: sky 7s infinite;
+}
+
+.cloud:nth-of-type(2)::before, .cloud:nth-of-type(2)::after {
+	background-color: #E4F1FE;
+}
+
+.cloud:nth-of-type(3) {
+	top: 70%;
+	left: 80%;
+	animation: sky 9s infinite;
+	-webkit-animation: sky 9s infinite;
+}
+
+.cloud:nth-of-type(3)::before, .cloud:nth-of-type(3)::after {
+	transform: rotate(60deg) skewY(-23deg);
+	width: 6em;
+	border-radius: 6em;
+	height: 6em;
+	margin-left: -4em;
+}
+
+.cloud:nth-of-type(3)::after {
+	margin-left: -1em;
+	margin-top: -9em;
+}
+
+.airplane {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-left: 150px solid #34495E;
+	border-bottom: 100px solid transparent;
+	z-index: 100;
+	transform: rotate(-20deg) skew(10deg);
+	top:40%;
+	left:20%;
+	animation: airplane 15s infinite;
+	-webkit-animation: airplane 15s infinite;
+}
+
+.airplane::before {
+	border-bottom: 27px solid #4B77BC;
+	border-left: 45px solid transparent;
+	border-right: 2px solid transparent;
+	border-radius: -11px;
+	height: 0;
+	width: 100px;
+	content: "";
+	position: absolute;
+	z-index: 6;
+	height: 0em;
+	margin-left: -10em;
+	margin-top: -5px;
+	transform: rotate(182deg) skewX(-35deg);
+}
+
+.airplane::after {
+	border-bottom: 26px solid #34495E;
+	border-left: 33px solid transparent;
+	border-right: 2px solid transparent;
+	height: 0;
+	width: 98px;
+	content: "";
+	position: absolute;
+	z-index: 6;
+	height: 0em;
+	margin-left: -9.9em;
+	margin-top: -2px;
+	transform: rotate(182deg) skewX(-47deg);
+}
+
+body {
+    background-color: #b4dde7d7;
+    overflow-y:auto;
+}
+#detailBody {
+	background-color: #b4dde7d7;
+}
+
+#pCenter {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+

@@ -5,8 +5,13 @@ let originalIndex = 0;
 
 
 
+function buttonClick() {
+    var element = document.getElementById("fly");
+    element.classList.toggle("clicked");
+    var paragraph = document.getElementById("pCenter");
+    paragraph.textContent = "Safe Travels";
 
-
+}
 let index =Math.floor(Math.random() * 3);
 
 var place1 = 'https://lp-cms-production.imgix.net/2021-03/shutterstock_304631102.jpg?auto=format&q=40&ar=16%3A9&fit=crop&w=1946';
@@ -17,6 +22,8 @@ const places = [];
 places.push(place1);
 places.push(place2);
 places.push(place3);
+
+
 // select random place and get the image address
 function changeImage() {
     
@@ -25,8 +32,11 @@ function changeImage() {
 }
 
 function changePage() {
-    location.href = 'placeDetail.html';
     
+    setTimeout(function(){
+        location.href = 'placeDetail.html';
+
+    }, 1500); 
 }
 
 function goHome() {
