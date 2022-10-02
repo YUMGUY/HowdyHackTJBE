@@ -11,6 +11,15 @@ a {
     
     
 }
+#author {
+    text-align:center;
+    position:fixed;
+    top:71%;
+    left:49%;
+    transform:translate(5%, 10%);
+    font-size:40px;
+
+}
 
 .infoText {
     padding-left: 5%;
