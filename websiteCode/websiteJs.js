@@ -234,8 +234,7 @@ console.log(places);
 function changeImage() {
     indexLine = Math.floor(Math.random() * 100);
     indexDatabase = Math.floor(Math.random() * 2);
-    console.log(indexDatabase);
-    console.log(indexLine);
+
    document.getElementById("Img1").src = places[indexDatabase][indexLine][4];
    document.getElementById('countryName').innerHTML = places[indexDatabase][indexLine][0];
    document.getElementById('landmarkName').innerHTML = places[indexDatabase][indexLine][1];
@@ -245,14 +244,20 @@ function changeImage() {
 
 function changePage() {
     
-    setTimeout(function(){
-        location.href = 'placeDetail.html';
+   setTimeout(function(){
+    indexLine = Math.floor(Math.random() * 100);
+    indexDatabase = Math.floor(Math.random() * 2);
+   location.href = 'placeDetail.html';
 
     }, 1500); 
+    
 }
 
 function goHome() {
     location.href = 'website.html';
 }
 
+
+
 window.onload = changeImage();
+
