@@ -33,16 +33,5 @@ function changePage() {
 function goHome() {
     location.href = 'website.html';
 }
-//const {readFileSync, promises: fsPromises} = require('fs');
-function syncReadFile(filename) {
-    const contents = readFileSync(filename, 'utf-8');
-  
-    const arr = contents.split(/\r?\n/);
-  
-    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
-  
-    return arr;
-}
-var places2 = syncReadFile("./textFile.txt");
 
 window.onload = changeImage();
