@@ -6,9 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type = "text/css" href = "websiteStyle.css">
         <script src = "websiteJs.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&display=swap" rel="stylesheet">
         <title>HowdyHack</title>
     </head>
 
@@ -18,14 +15,14 @@
         </div>
 
         <main data-barba="container" data-barba-namespace="about-section">
-        <div id = 'pl'>
+            <div id = 'pl'>
             <div class="header">
-                
-                <h1 id = 'countryName'>Country Name</h1>    
+                <div id = 'pl'>
+                <h1 id = 'countryName'>Country Name</h1>
                 <div class="animate-this button">
-                    <a href="placeDetail2.html" onclick = "changeImage()">flip the page</a>
+                    <a href="placeDetail.html" onclick = "changeImage()">flip the page</a>
                 </div>
-                
+                </div>
             </div>
         </div>
             <div class = "ImageBox">
@@ -33,7 +30,7 @@
             </div>
                 <h2 class = 'infoText' id = 'landmarkName'>Landmark Name</h2>
                 <h3 class = 'infoText' id = 'landmarkDesc'>Landmark Desc</h3>
-                <a href = '' class = 'infoText' id = 'descSource' target = "_blank">Click Here to Learn More</a>
+                <a href ="" class = 'infoText' id = 'descSource' target = "_blank">Click Here to Learn More</a>
         </main>
 
     </body>
@@ -49,12 +46,6 @@
     changeImage();
 </script>
 
-<!--
-<script>
-    changeImage();
-</script>
--->
-
 
 <!--
 <!DOCTYPE html>
@@ -63,32 +54,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type = "text/css" href = "websiteStyleOptimized.css">
+    <link rel="stylesheet" type = "text/css" href = "websiteStyle.css">
     <script src = "websiteJs.js"></script>
     <title>HowdyHack</title>
 </head>
-<body>
-    
-    <h1 id = 'countryName'>Country Name</h1>
-
-    <!-- textbox for description -->
-    <div class="container">
-        <div class="box"></div>
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
     </div>
 
+    <main data-barba="container" data-barba-namespace="about-section">
+        <div class="header">
+            <h1 class="title animate-this">
+                about page
+            </h1>
+            <div class="animate-this button">
+                <a href="placeDetail.html">flip the page</a>
+            </div>
+        </div>
+    </main>
+    <h1 id = 'countryName'>Country Name</h1>
 
-    <h2 id = 'landmarkName'>Landmark Name</h2>
-    <h3 id = 'landmarkDesc'>Landmark Desc</h3>
-    <h4 id = 'descSource'>Descripton Source</h4>
-    <!--image of place-->
     <div class = "ImageBox">
-        <img id = "Img1" src = "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002532/img/basic/a0002532_main.jpg" alt="Akihabara" width="500" height="500" >
-        <!--width="500" height="500"-->
+        <img id = "Img1" src = "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002532/img/basic/a0002532_main.jpg" alt="Akihabara" width="500" height="500">
    </div>
 
 
    <div class="frame">
-    <button onclick = "changeImage()">
+    <button id = "info" class="custom-btn btn-3" onclick = "changeImage()">
         <h1> 
         <span>Flip the Page
         </span>
