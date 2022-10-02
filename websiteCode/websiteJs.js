@@ -1,8 +1,3 @@
-let currentImage;
-let previousImage;
-let currentIndex = 0;
-let originalIndex = 0;
-
 let indexDatabase = Math.floor(Math.random() * 2);
 let indexLine = Math.floor(Math.random() * 100);
 
