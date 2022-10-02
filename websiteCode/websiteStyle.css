@@ -9,12 +9,12 @@ a {
     text-decoration: none;
     color:aliceblue;
 }
-#author {
+.centerText {
     text-align:center;
     position:fixed;
     top:71%;
     left:49%;
-    transform:translate(0%, -10%);
+    transform:translate(0%, -5%);
     font-size:50px;
     color: #ABABAB;
 }
@@ -115,7 +115,15 @@ h1 {
     filter: blur(5px);
 }
 
+.test:not(hover) + .centerText{
+    filter: blur(5px);
+}
+
 .test:hover {
+    filter: blur(0px);
+}
+
+.test:hover + .centerText{
     filter: blur(0px);
 }
 
